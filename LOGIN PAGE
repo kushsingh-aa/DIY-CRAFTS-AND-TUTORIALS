@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #f8f4f2;  /* SAME background as full website */
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .login-box {
+            width: 380px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(25px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .login-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #ff6b81;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #6b6b6b;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin: 12px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #ff6b81;
+            box-shadow: 0 0 8px rgba(255,107,129,0.4);
+        }
+
+        .btnLogin {
+            width: 100%;
+            padding: 13px;
+            background: #ff6b81;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btnLogin:hover {
+            background: #ff3b64;
+        }
+
+        .errorMsg {
+            text-align: center;
+            color: red;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>DIY Craft Tutorials</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="crafts.html">Crafts</a>
+    <a href="about.html">About</a>
+    <a href="login.html" class="active">Login</a>
+</nav>
+
+<div class="login-box">
+    <div class="login-title">Welcome Back!</div>
+    <div class="subtitle">Please login to continue</div>
+
+    <input type="text" id="email" placeholder="Enter your email">
+    <input type="password" id="password" placeholder="Enter your password">
+
+    <button class="btnLogin" onclick="validate()">Login</button>
+
+    <div class="errorMsg" id="error"></div>
+</div>
+
+<script>
+function validate() {
+    let email = document.getElementById("email").value.trim();
+    let pass = document.getElementById("password").value.trim();
+    let error = document.getElementById("error");
+
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if (!pattern.test(email)) {
+        error.innerHTML = "Invalid Email";
+        return;
+    }
+
+    if (pass.length < 4) {
+        error.innerHTML = "Password must be at least 4 characters";
+        return;
+    }
+
+    error.innerHTML = "";
+
+    alert("Login Successful!");
+
+    // Redirect to homepage
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
