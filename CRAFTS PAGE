@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crafts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>DIY Craft Tutorials</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="crafts.html">Crafts</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+</nav>
+
+<h2 style="text-align:center; margin-top:30px;">All Tutorials</h2>
+
+<div class="card-container" id="cardBox"></div>
+
+<!-- MODAL -->
+<div class="modal-bg" id="modal">
+    <div class="modal-box">
+        <h2 id="modalTitle"></h2>
+        <ul id="modalSteps"></ul>
+        <div class="btn" onclick="closeModal()">Close</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>loadTutorials();</script>
+
+</body>
+</html>  
