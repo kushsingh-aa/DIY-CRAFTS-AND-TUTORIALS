@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — DIY Crafts & Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>DIY Crafts & Tutorials</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="crafts.html">Crafts</a>
+            <a href="about.html" class="active">About</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <h2>About Our DIY Platform</h2>
+        <p>
+            Welcome to <b>DIY Crafts & Tutorials</b>, a creative space designed for students, hobbyists,
+            and craft lovers who want to explore, learn, and create beautiful handmade projects.
+            Our goal is to make crafting easy, enjoyable, and accessible for everyone — whether you're
+            just starting or already skilled.
+        </p>
+
+        <h3>🎯 Our Mission</h3>
+        <p>
+            We aim to inspire creativity by providing step-by-step craft tutorials that are simple,
+            detailed, and fun. We believe that DIY art is not just a hobby — it is a way to reduce stress,
+            enhance skills, and express emotions through creativity.
+        </p>
+
+        <h3>📌 What Makes Us Special?</h3>
+        <ul class="about-list">
+            <li>✔ Easy-to-follow tutorials for all age groups</li>
+            <li>✔ Use of affordable and easily available materials</li>
+            <li>✔ Student-friendly projects suitable for school/college submissions</li>
+            <li>✔ Beginner to advanced craft ideas</li>
+            <li>✔ Regularly updated content</li>
+        </ul>
+
+        <h3>🛠️ What You’ll Learn Here</h3>
+        <p>Our tutorials cover a wide range of creative categories:</p>
+        <ul class="about-list">
+            <li>• Paper crafts, origami & home decor ideas</li>
+            <li>• DIY gifts, scrapbooks & cards</li>
+            <li>• Recycled crafts using waste materials</li>
+            <li>• Creative painting & art techniques</li>
+            <li>• Seasonal crafts (Diwali, Christmas, New Year, etc.)</li>
+        </ul>
+
+        <h3>👩‍🏫 Who Is This Website For?</h3>
+        <p>
+            Anyone! Whether you're a school/college student, a teacher looking for activity ideas,
+            or a craft enthusiast searching for inspiration — this website is built for you.
+        </p>
+
+        <h3>🤝 Our Vision</h3>
+        <p>
+            We envision a world where students and creators can learn crafting without any difficulty.
+            Through simple instructions and affordable materials, we aim to make creativity accessible
+            to everyone.
+        </p>
+
+        <h3>📬 Contact Us</h3>
+        <p>If you have suggestions or want to share your creations, feel free to reach out:</p>
+        <p><b>Email:</b> support@diycrafts.com</p>
+        <p><b>Instagram:</b> @diycrafts_official</p>
+    </section>
+
+    <footer>
+        <p>© 2025 DIY Crafts & Tutorials — All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
